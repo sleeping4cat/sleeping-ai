@@ -43,3 +43,26 @@ window.addEventListener("DOMContentLoaded", function () {
     revealTexts(projectDescriptions);
   });
   
+
+  function detectMobileDevice() {
+    const mobileDevices = [
+      'Android',
+      'webOS',
+      'iPhone',
+      'iPad',
+      'iPod',
+      'BlackBerry',
+      'Windows Phone'
+    ];
+  
+    const userAgent = navigator.userAgent;
+    for (let device of mobileDevices) {
+      if (userAgent.includes(device)) {
+        window.location.href = 'error.html';
+        return;
+      }
+    }
+  }
+  
+  detectMobileDevice();
+  
