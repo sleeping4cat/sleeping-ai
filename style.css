@@ -7,7 +7,7 @@ body {
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Remove scrollbars */
+  overflow: auto; /* Remove scrollbars */ /*hidden hides scroll-bar */
 }
 
 main {
