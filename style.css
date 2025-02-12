@@ -70,3 +70,20 @@ a:hover {
   animation: horizontal-scroll 10s linear infinite;
   z-index: 9999;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2563EB;
+  border-radius: 10px;
+}
+
+/* scroll-bar edit */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+scrollbar-width: thin;
+scrollbar-color: #2563EB #f1f1f1;
